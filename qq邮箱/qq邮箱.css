@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.top {
+    height: 63px;
+    width: 1536px;
+    background-color: #EFF4FA;
+    border: #d6dfea 1px solid;
+}
+
+.top .image1 {
+    overflow: hidden;
+    float: left;
+    margin: 14px 0 0 40px;
+
+}
+
+.top .topright {
+    float: left;
+    width: 1274px;
+    text-align: right;
+    font-size: 12px;
+    color: lightsteelblue;
+    margin-top: 16px;
+    line-height: 29px;
+}
+
+.top .topright {
+    padding-right: 40px;
+}
+
+.top .topright a {
+    color: #1D5494;
+    text-decoration: none;
+}
+
+.middle .text {
+    float: left;
+    margin-top: 115px;
+    margin-left: 70px;
+    line-height: 200%;
+}
+
+.middle .text .title {
+    font-size: 24px;
+    color: #6f95c8;
+    margin-bottom: 10px;
+}
+
+.middle .text p {
+    font-size: 14px;
+}
+
+.middle .image {
+    float: left;
+    margin-top: 50px;
+    margin-right: 50px;
+    display: block;
+}
+
+.middle .login {
+    float: left;
+    width: 350px;
+    height: 400px;
+    border: 1px solid #6f95c8;
+    margin-top: 55px;
+}
+
+.middle .login .sidebar {
+    border-bottom: 1px solid #6f95c8;
+    height: 50px;
+    line-height: 50px;
+}
+
+.middle .login ul li {
+    list-style-type: none;
+    display: block;
+    height: 50px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: gray;
+}
+
+.middle .login ul .tab1 {
+    float: left;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.middle .login ul .tab2 {
+    float: right;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.middle .login .acount {
+    margin-top: 40px;
+    margin-left: 27px;
+    width: 280px;
+    height: 35px;
+    font-family: "微软雅黑";
+}
+
+.middle .login .password {
+    margin-top: 15px;
+    margin-left: 27px;
+    width: 280px;
+    height: 35px;
+    font-family: "微软雅黑";
+}
+
+.middle .login .checkbox {
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background: white;
+}
+
+.middle .login p {
+    margin-top: 30px;
+    float: left;
+}
+
+.middle .login .submit {
+    margin-left: 27px;
+    margin-top: 10px;
+    width: 280px;
+    height: 40px;
+    background: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    font-size: 16px;
+    color: white;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+
+.middle .login .code {
+    margin-top: 10px;
+    margin-left: 130px;
+    color: #6f95c8;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.middle .login .forget {
+    float: left;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.middle .login .new {
+    float: right;
+    margin-top: 80px;
+    margin-right: 30px;
+}
+
+.middle .login a {
+    color: #6f95c8;
+    text-decoration: none;
+}
+
+.middle .login a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d6dfea;
+    background: #eff4fa;
+    text-align: center;
+    color: #b6b6b6;
+    letter-spacing: 0.5px;
+}
+
+.footer a {
+    color: #6f95c8;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
