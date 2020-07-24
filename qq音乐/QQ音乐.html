@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .navone {
+        display: flex;
+        border-bottom: 1px solid #f2f2f2;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navone a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: black;
+        background-color: white;
+    }
+
+    a.nav1:visited {
+        color: white;
+        background-color: #31c27c;
+    }
+
+    a:hover {
+        color: #31c27c;
+    }
+
+    .nav2 {
+        position: relative;
+    }
+
+    .navone .pic2 {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        width: 37px;
+        height: 14px;
+    }
+
+    .nav3 {
+        margin-left: 20px;
+    }
+
+    .nav4 {
+        width: 220px;
+        height: 36px;
+        font-size: 14px;
+        border: 1px solid #c9c9c9;
+        line-height: 36px;
+        border-radius: 3px;
+        padding-left: 10px;
+    }
+
+    .icon_search {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navone .nav5 {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .navone .nav6 {
+        height: 36px;
+        color: white;
+        border-radius: 2px;
+        font-size: 13px;
+        border: 1px solid #31c27c;
+        background-color: #31c27c;
+        margin-left: 15px;
+        padding: 0 10px;
+    }
+
+    .navone .nav7 {
+        height: 36px;
+        color: black;
+        border-radius: 2px;
+        font-size: 13px;
+        border: 1px solid #c9c9c9;
+        margin-left: 15px;
+        padding: 0 10px;
+    }
+
+    .navtwo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navtwo a {
+        display: flex;
+        height: 51px;
+        color: black;
+        font-size: 15px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        padding: 0 25px;
+    }
+
+    a:hover {
+        color: #31c27c;
+    }
+
+    a.nav8:visited {
+        color: #31c27c;
+    }
+
+    .recommend {
+        background-image: linear-gradient(to bottom, rgba(221, 221, 221, 0.3), white);
+    }
+
+    .recommend1 {
+        display: flex;
+        height: 95px;
+        font-weight: 500;
+        font-size: 28px;
+        font-family: poppin, Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommend2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommend2 a {
+        display: flex;
+        align-items: center;
+        height: 51px;
+        color: black;
+        font-size: 15px;
+        padding: 0 32px;
+    }
+
+    a:hover {
+        color: #31c27c;
+    }
+
+    a.r1:visited {
+        color: #31c27c;
+    }
+
+    .recommend .recommend3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommend3 img {
+        width: 224px;
+        height: 224px;
+    }
+
+    .recommend3 .pic {
+        margin: 0 10px;
+    }
+
+    .recommend3 a {
+        display: block;
+        font-size: 14px;
+        color: black;
+    }
+
+    .recommend3 .play {
+        font-size: 14px;
+        color: #999;
+    }
+
+    a:hover {
+        color: #31c27c;
+    }
+
+    .recommend4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+    }
+
+    .recommend4 .pic6 {
+        height: 30px;
+        width: 30px;
+        margin: 0 -5px;
+    }
+
+    .newsong {
+        background-image: linear-gradient(to bottom, rgba(221, 221, 221, 0.3), white);
+    }
+
+    .newsong1 {
+        display: flex;
+        height: 95px;
+        font-weight: 500;
+        font-size: 28px;
+        font-family: poppin, Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsong2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .newsong2 a {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        color: black;
+        font-size: 15px;
+        padding: 0 32px;
+    }
+
+    a:hover {
+        color: #31c27c;
+    }
+
+    .newsong2 .play2 {
+        display: flex;
+        border: 1px solid #c9c9c9;
+        height: 38px;
+        color: #000;
+        font-size: 14px;
+        padding: 0 23px;
+        position: relative;
+        left: -290px;
+    }
+
+    a.play2:hover {
+        background-color: #ddd;
+    }
+
+    a.play3:visited {
+        color: #31c27c;
+    }
+
+    .first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .one {
+        display: flex;
+        height: 111px;
+        border-bottom: 1px solid #c9c9c9;
+        margin-left: 20px;
+    }
+
+    .one .pic7 {
+        width: 86px;
+        height: 86px;
+        margin-top: 5px;
+    }
+
+    .one .song1 {
+        display: inline-block;
+        color: black;
+        height: 80px;
+        width: 200px;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .one span {
+        margin-top: 42px;
+        margin-left: 15px;
+        font-size: 14px;
+        margin-right: 30px;
+        color: #999;
+    }
+
+    .onesong .p2 {
+        color: #999;
+    }
+
+    .second {
+        display: flex;
+        justify-content: center;
+    }
+
+    .third {
+        display: flex;
+        justify-content: center;
+    }
+
+    .last {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+    }
+
+    .last .pic6 {
+        height: 30px;
+        width: 30px;
+        margin: 0 -5px;
+    }
+</style>
+
+<body>
+    <div class="navone">
+        <a href="#">
+            <img src="image/logo.png" alt="" class="pic1">
+        </a>
+        <a href="#" class="nav1"> 音乐馆</a>
+        <a href="#">我的音乐</a>
+        <a href="#" class="nav2">客户端
+            <img src="image/mark1.png" alt="" class="pic2">
+        </a>
+        <a href="#">开放平台</a>
+        <a href="#">vip</a>
+        <a href="#" class="nav3">
+            <input type="text" placeholder="搜索音乐、MV、歌单、用户" class="nav4">
+            <i class="icon_search sprite"></i>
+        </a>
+        <a href="#" class="nav5">登录</a>
+        <a href="#" class="nav6">开通绿钻豪华版</a>
+        <a href="#" class="nav7">开通付费包</a>
+    </div>
+    <div class="navtwo">
+        <a href="#" class="nav8">首页</a>
+        <a href="#">歌手</a>
+        <a href="#">新碟</a>
+        <a href="#">排行榜</a>
+        <a href="#">分类歌单</a>
+        <a href="#">电台</a>
+        <a href="#">MV</a>
+        <a href="#">数字专辑</a>
+        <a href="#">票务</a>
+    </div>
+    <div class="recommend">
+        <div class="recommend1">
+            歌 单 推 荐
+        </div>
+        <div class="recommend2">
+            <a href="#" class="r1">为你推荐</a>
+            <a href="#">儿歌</a>
+            <a href="#">网络歌曲</a>
+            <a href="#">经典</a>
+            <a href="#">官方歌单</a>
+            <a href="#">情歌</a>
+        </div>
+        <div class="recommend3">
+            <div class="pic">
+                <img src="image/pic1.jpg" alt="">
+                <a href="#">台湾古装剧 · 情生意动凡人歌</a>
+                <div class="play">播放量：476.3万</div>
+            </div>
+            <div class="pic">
+                <img src="image/pic2.jpg" alt="">
+                <a href="#">米津玄师 | 来自异次元宝藏男孩</a>
+                <div class="play">播放量：113.8万</div>
+            </div>
+            <div class="pic">
+                <img src="image/pic3.jpg" alt="">
+                <a href="#">节奏控丨百首极品女声电音</a>
+                <div class="play">播放量：1567.4万</div>
+            </div>
+            <div class="pic">
+                <img src="image/pic4.jpg" alt="">
+                <a href="#">运动达人专属：Adidas 门店音乐</a>
+                <div class="play">播放量：3369.6万</div>
+            </div>
+            <div class="pic">
+                <img src="image/pic5.jpg" alt="">
+                <a href="#">伤感华语：一别成两宽，孤独上了瘾</a>
+                <div class="play">播放量：4264.6万</div>
+            </div>
+        </div>
+        <div class="recommend4">
+            <div>
+                <img src="image/pic6.png" alt="" class="pic6">
+                <img src="image/pic6.png" alt="" class="pic6">
+            </div>
+        </div>
+        <div class="newsong">
+            <div class="newsong1">
+                新 歌 首 发
+            </div>
+            <div class="newsong2">
+                <a href="#" class="play2">播放全部</a>
+                <a href="#" class="play3">最新</a>
+                <a href="#">内地</a>
+                <a href="#">欧美</a>
+                <a href="#">韩国</a>
+                <a href="#">日本</a>
+            </div>
+            <div class="first">
+                <div class="one">
+                    <img src="image/new1.jpg" alt="" class="pic7">
+                    <div class="onesong">
+                        <a href="#" class="song1">
+                            <p> Hi 少年《穿越火线》网剧插曲</p>
+                            <p class="p2">UNINE夏瀚宇 / UNINE陈宥维 /</p>
+                        </a>
+                    </div>
+                    <span>
+                        04:06
+                    </span>
+                </div>
+                <div class="one">
+                    <img src="image/new2.jpg" alt="" class="pic7">
+                    <div class="onesong">
+                        <a href="#" class="song1">
+                            <p> 一个人《仲夏满天心》电视剧插</p>
+                            <p class="p2">简弘亦 /</p>
+                        </a>
+                    </div>
+                    <span>
+                        03:31
+                    </span>
+                </div>
+                <div class="one">
+                    <img src="image/new3.jpg" alt="" class="pic7">
+                    <div class="onesong">
+                        <a href="#" class="song1">
+                            <p> 自信心腾讯音乐人三周年推广曲</p>
+                            <p class="p2">张楚 /</p>
+                        </a>
+                    </div>
+                    <span>
+                        06:11
+                    </span>
+                </div>
+            </div>
+            <div class="second">
+                <div class="one">
+                    <img src="image/new4.jpg" alt="" class="pic7">
+                    <div class="onesong">
+                        <a href="#" class="song1">
+                            <p> 人美路子野</p>
+                            <p class="p2">宁静 / 王丽坤 / 王霏霏 /</p>
+                        </a>
+                    </div>
+                    <span>
+                        03:58
+                    </span>
+                </div>
+                <div class="one">
+                    <img src="image/new4.jpg" alt="" class="pic7">
+                    <div class="onesong">
+                        <a href="#" class="song1">
+                            <p> 彩虹节拍</p>
+                            <p class="p2">张雨绮 / 金莎 / 蓝盈莹 / 伊能静 /</p>
+                        </a>
+                    </div>
+                    <span>
+                        03:58
+                    </span>
+                </div>
+                <div class="one">
+                    <img src="image/new5.jpg" alt="" class="pic7">
+                    <div class="onesong">
+                        <a href="#" class="song1">
+                            <p> Nobody's Love</p>
+                            <p class="p2">Maroon 5</p>
+                        </a>
+                    </div>
+                    <span>
+                        03:31
+                    </span>
+                </div>
+            </div>
+            <div class="third">
+                <div class="one">
+                    <img src="image/new6.jpg" alt="" class="pic7">
+                    <div class="onesong">
+                        <a href="#" class="song1">
+                            <p> HELLO</p>
+                            <p class="p2">Official鬍子男dism (Official </p>
+                        </a>
+                    </div>
+                    <span>
+                        04:40
+                    </span>
+                </div>
+                <div class="one">
+                    <img src="image/new7.jpg" alt="" class="pic7">
+                    <div class="onesong">
+                        <a href="#" class="song1">
+                            <p> 反转地球</p>
+                            <p class="p2">张雨绮 / 金莎 / 蓝盈莹 / 伊能静</p>
+                        </a>
+                    </div>
+                    <span>
+                        04:17
+                    </span>
+                </div>
+                <div class="one">
+                    <img src="image/new7.jpg" alt="" class="pic7">
+                    <div class="onesong">
+                        <a href="#" class="song1">
+                            <p> 达拉崩吧</p>
+                            <p class="p2">火箭少女101</p>
+                        </a>
+                    </div>
+                    <span>
+                        04:10
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div class="last">
+                    <img src="image/pic6.png" alt="" class="pic6">
+                    <img src="image/pic6.png" alt="" class="pic6">
+                    <img src="image/pic6.png" alt="" class="pic6">
+                    <img src="image/pic6.png" alt="" class="pic6">
+                    <img src="image/pic6.png" alt="" class="pic6">
+                    <img src="image/pic6.png" alt="" class="pic6">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
